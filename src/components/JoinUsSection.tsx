@@ -26,8 +26,8 @@ const JoinUsSection = () => {
           className={styles.socialIcon}
         />
         <Image
-          src={require("/public/images/twiter.png")}
-          alt="twiter"
+          src={require("/public/images/whatsapp.png")}
+          alt="whatsapp"
           className={styles.socialIcon}
         />
         <Image

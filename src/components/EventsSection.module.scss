@@ -41,27 +41,24 @@
             position: absolute;
             bottom: 20px;
             right: 20px;
-            width: 40px;
-            height: 40px;
-            background-color: #000; /* You can adjust this color */
+            width: 50px;
+            height: 50px;
+            background-color: #FFF; /* You can adjust this color */
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 1.5rem;
-            color: #fff;
+            color: #000;
           }
           .plusIcon{
-            font-size: 24px;
-            background-color: #fff;
-            border-radius: 50%;
-            color: #000;
-            width: 50px;
-            height: 50px;
-            text-align: center;
-            padding: 8px;
-            cursor: pointer;
-
+            // font-size: 24px;
+            // background-color: #FFF;
+            // border-radius: 50%;
+            // padding: 8px;
+            // cursor: pointer;
+            // color: #000;
+            // text-align: center;
           }
     }
   }

@@ -29,7 +29,7 @@ const EventsSection = () => {
               <p>{description}</p>
             </div>
             <div className={styles.cardIcon}>
-              <i className={styles.plusIcon}>&#43;</i>
+             &#43;
             </div>
           </div>
         ))}
