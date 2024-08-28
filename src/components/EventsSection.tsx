@@ -1,21 +1,21 @@
 import styles from "./EventsSection.module.scss";
-
+import back from '/public/images/card_back.jpg'
 const EventsSection = () => {
   const events = [
     {
       title: "Build Hackathon",
       description: "Join us for the ultimate event for tech enthusiasts!",
-      imageUrl: "../../public/images/card_back.jpg",
+      imageUrl: back.src,
     },
     {
       title: "Networking Summit",
       description: "Meet industry leaders and discover new opportunities.",
-      imageUrl: "../../public/images/card_back.jpg",
+      imageUrl: back.src,
     },
     {
       title: "Be A Sponsor",
       description: "Support our events and get your brand noticed.",
-      imageUrl: "../../public/images/card_back.jpg",
+      imageUrl: back.src,
     },
   ];
   return (
@@ -23,13 +23,14 @@ const EventsSection = () => {
       <h2>Events</h2>
       <div className={styles.eventCards}>
         {events.map(({ title, imageUrl, description }, index) => (
-          <div key={title} className={styles.eventCard} style={{ backgroundImage: `url(${imageUrl})` }}> 
-            <div className={styles.cardContent}>
+          <div key={title} className={styles.eventCard} > 
+            <div className={styles.cardContent} style={{ backgroundImage: `url(${imageUrl})`}}>
               <h3>{title}</h3>
               <p>{description}</p>
             </div>
             <div className={styles.cardIcon}>
-             &#43;
+              <span className={styles.plusIcon}>&#43;</span>
+           
             </div>
           </div>
         ))}

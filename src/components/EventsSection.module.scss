@@ -19,22 +19,26 @@
         width: 300px;
         height: 320px;
         background: black no-repeat center center; /* Replace with your image path */
-        background-size: cover;
+       
         border-radius: 20px;
         position: relative;
-        padding: 20px;
         color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         .cardContent {
+          background-size: cover;
+          width: 100%;
+          height: 180px;
             h3 {
               font-size: 1.5rem;
               margin-bottom: 10px;
+              padding: 20px;
             }
         
             p {
               font-size: 1rem;
               line-height: 1.4;
+              padding: 20px;
             }
           }
           .cardIcon {
@@ -52,6 +56,10 @@
             color: #000;
           }
           .plusIcon{
+            transition: transform 0.6s ease-in-out;
+            &:hover{
+              transform: rotate(360deg);
+            }
             // font-size: 24px;
             // background-color: #FFF;
             // border-radius: 50%;
