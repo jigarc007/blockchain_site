@@ -1,0 +1,57 @@
+.events {
+    padding: 80px 20px;
+    background-color: #ffffff;
+  
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 40px;
+      color: #000;
+    }
+  
+    .eventCards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  
+    .eventCard {
+        width: 300px;
+        height: 320px;
+        background: black no-repeat center center; /* Replace with your image path */
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        padding: 20px;
+        color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        .cardContent {
+            h3 {
+              font-size: 1.5rem;
+              margin-bottom: 10px;
+            }
+        
+            p {
+              font-size: 1rem;
+              line-height: 1.4;
+            }
+          }
+          .cardIcon {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #000; /* You can adjust this color */
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            color: #fff;
+          }
+        
+    }
+  }
+  

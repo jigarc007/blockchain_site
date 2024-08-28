@@ -1,0 +1,56 @@
+.resources {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+    display: flex;
+
+  .textWrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 30px;
+  }
+  
+    h2 {
+      font-size: 3.5rem;
+      color: #212529;
+    }
+  
+    p {
+      font-size: 1rem;
+      color: #555;
+    }
+    .cards{
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+      gap: 30px;
+      .darkCard{
+        background: #000 no-repeat center center !important; /* Replace with your image path */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2) !important; 
+        color: #FFF !important;
+      }
+      .card{
+        width: 250px;
+        height: 250px;
+        background: #FFF no-repeat center center; /* Replace with your image path */
+        background-size: cover;
+        border-radius: 20px;
+        position: relative;
+        padding: 20px;
+        color: #000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        h3{
+          font-size: 2rem;
+        }
+      }
+     
+    }
+  }
+  

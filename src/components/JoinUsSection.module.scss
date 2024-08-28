@@ -1,0 +1,45 @@
+.joinUs {
+    padding: 80px 20px;
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textWrapper{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-left: 30px;
+
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  
+    .socialLinks {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 20px;
+   
+      .socialIcon{
+        width: 80px;
+        height: 80px;
+      transition: transform 0.6s ease-in-out;
+        &:hover{
+          transform: rotate(360deg);
+        }
+      }
+      a {
+        color: #ffffff;
+        font-size: 1.5rem;
+  
+        &:hover {
+          color: #1e90ff;
+        }
+      }
+    }
+  }
+  

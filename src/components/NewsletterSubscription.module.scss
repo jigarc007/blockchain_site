@@ -1,0 +1,47 @@
+.newsletterContainer {
+  padding: 20px;
+  background-color: #f8f9fa;
+  color: #000;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  .headingWrapper{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+
+  } 
+  h3{
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.emailInput {
+  padding: 10px;
+  width: 250px;
+  border-color: transparent;
+  background: #FFF;
+  border-radius: 5px 0 0 5px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.subscribeButton {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
