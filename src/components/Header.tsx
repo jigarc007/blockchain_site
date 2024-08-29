@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Header.module.scss";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
@@ -82,7 +82,14 @@ export default function Header() {
   const [activeMenu, setActiveMenu] = useState("Contact Us");
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
   const theme = useTheme();
-
+  const [width, setWidth] = useState(0)
+  const handleResize = () => setWidth(window.innerWidth)
+  useEffect(() => {
+      handleResize()
+      window.addEventListener('resize', handleResize)
+      return () => window.removeEventListener('resize', handleResize)
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
   const handleActive = (menuText: string) => {
     setActiveMenu(menuText);
   };
@@ -170,7 +177,7 @@ export default function Header() {
   };
   return (
     <div className={styles.headerWrapper}>
-      {window.innerWidth > 768 ? (
+      {width > 768 ? (
         <>
           <h1>Build</h1>
           <ul className={styles.header}>
