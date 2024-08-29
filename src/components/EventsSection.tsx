@@ -1,23 +1,24 @@
 import styles from "./EventsSection.module.scss";
 import back from '/public/images/card_back.jpg'
+
+const events = [
+  {
+    title: "Build Hackathon",
+    description: "Join us for the ultimate event for tech enthusiasts!",
+    imageUrl: back.src,
+  },
+  {
+    title: "Networking Summit",
+    description: "Meet industry leaders and discover new opportunities.",
+    imageUrl: back.src,
+  },
+  {
+    title: "Be A Sponsor",
+    description: "Support our events and get your brand noticed.",
+    imageUrl: back.src,
+  },
+];
 const EventsSection = () => {
-  const events = [
-    {
-      title: "Build Hackathon",
-      description: "Join us for the ultimate event for tech enthusiasts!",
-      imageUrl: back.src,
-    },
-    {
-      title: "Networking Summit",
-      description: "Meet industry leaders and discover new opportunities.",
-      imageUrl: back.src,
-    },
-    {
-      title: "Be A Sponsor",
-      description: "Support our events and get your brand noticed.",
-      imageUrl: back.src,
-    },
-  ];
   return (
     <section className={styles.events}>
       <h2>Events</h2>

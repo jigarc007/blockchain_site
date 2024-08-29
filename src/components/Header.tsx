@@ -77,7 +77,13 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   ...theme.mixins.toolbar,
   justifyContent: "flex-end",
 }));
-
+const menuLinks = [
+  { id: 1, text: "Home" },
+  { id: 1, text: "About" },
+  { id: 1, text: "Department" },
+  { id: 1, text: "Services" },
+  { id: 1, text: "Contact Us" },
+];
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState("Contact Us");
   const [isOpenDrawer, setIsOpenDrawer] = useState(false);
@@ -93,13 +99,6 @@ export default function Header() {
   const handleActive = (menuText: string) => {
     setActiveMenu(menuText);
   };
-  const menuLinks = [
-    { id: 1, text: "Home" },
-    { id: 1, text: "About" },
-    { id: 1, text: "Department" },
-    { id: 1, text: "Services" },
-    { id: 1, text: "Contact Us" },
-  ];
   const handleDrawerOpen = () => {
     setIsOpenDrawer(true);
   };
