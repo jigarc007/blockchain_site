@@ -5,9 +5,7 @@ const WhyBuildSection = () => {
       <div>
         {/* Video and stats */}
         <iframe
-          height={"500px"}
-          width={"700px"}
-          className={`w-full aspect-video self-stretch md:min-h-96`}
+          className={`w-full aspect-video self-stretch md:min-h-96 ${styles.frameWidth}`}
           src={`https://www.youtube.com/embed/oFDeNcu3mnc`}
           frameBorder="0"
           title="Product Overview Video"

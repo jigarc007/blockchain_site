@@ -17,6 +17,11 @@
       margin: 0;
       padding-left: 10px;
     }
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
   }
 
   .imageGrid {
@@ -27,7 +32,10 @@
     top: 0px;
     right: 20%;
 
-
+    @media only screen and (max-width: 768px) {
+      top: 40%;
+      left: 10%;
+    }
     .gridItem {
       position: absolute;
       width: 180px; /* Adjust size as needed */
@@ -79,5 +87,9 @@
       top: 220px;
       left: 200px;
     }
+  }
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    height: 700px;
   }
 }
