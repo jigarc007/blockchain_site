@@ -6,9 +6,15 @@
     height: 100px;
     background: #f8f9fa;
     color: #000;
+    .drawerBtn{
+        position: absolute;
+       left: 10px;
+        background-color: transparent;
+        padding: 10px;
+        border: none;
+    }
     @media only screen and (max-width: 768px) {
         flex-direction: column;
-        height: 550px;
         align-items: center;
         justify-content: center;
     }
