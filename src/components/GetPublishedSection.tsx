@@ -1,5 +1,5 @@
 import styles from "./GetPublishedSection.module.scss";
-
+import CallMadeRoundedIcon from '@mui/icons-material/CallMadeRounded';
 const GetPublishedSection = () => {
   return (
     <section className={styles.getPublished}>

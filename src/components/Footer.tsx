@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.scss";
+import {Twitter,GitHub,LinkedIn, CalendarMonth, Email, Phone} from '@mui/icons-material'
 
 const Footer = () => {
   return (
@@ -16,11 +17,11 @@ const Footer = () => {
             example.com
           </a>
         </p>
-        <p>
-          Email: <a href="mailto:info@example.com">info@example.com</a>
+        <p className={styles.iconWrapper}>  
+          <Email />: <a href="mailto:info@example.com">info@example.com</a>
         </p>
-        <p>
-          Phone: <a href="tel:+1234567789">+123 4567 789</a>
+        <p className={styles.iconWrapper}>
+          <Phone />: <a href="tel:+1234567789">+123 4567 789</a>
         </p>
       </div>
       <div className={styles.footerSections}>
@@ -101,8 +102,9 @@ const Footer = () => {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.iconWrapper}
               >
-                Twitter
+               <Twitter /> Twitter
               </a>
             </li>
             <li>
@@ -110,8 +112,9 @@ const Footer = () => {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.iconWrapper}
               >
-                LinkedIn
+               <LinkedIn /> LinkedIn
               </a>
             </li>
             <li>
@@ -119,8 +122,9 @@ const Footer = () => {
                 href="https://github.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.iconWrapper}
               >
-                GitHub
+               <GitHub /> GitHub
               </a>
             </li>
             <li>
@@ -128,8 +132,9 @@ const Footer = () => {
                 href="https://dribbble.com"
                 target="_blank"
                 rel="noopener noreferrer"
+                className={styles.iconWrapper}
               >
-                Dribbble
+               <CalendarMonth /> Dribbble
               </a>
             </li>
           </ul>
