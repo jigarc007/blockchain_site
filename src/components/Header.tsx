@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styles from "./Header.module.scss";
 export default function Header() {
-  const [activeMenu, setActiveMenu] = useState("");
+  const [activeMenu, setActiveMenu] = useState("Contact Us");
   const handleActive = (menuText: string) => {
     setActiveMenu(menuText);
   };
@@ -11,7 +11,7 @@ export default function Header() {
     { id: 1, text: "About" },
     { id: 1, text: "Department" },
     { id: 1, text: "Services" },
-    { id: 1, text: "Contact us" },
+    { id: 1, text: "Contact Us" },
   ];
   return (
     <div className={styles.headerWrapper}>
@@ -24,7 +24,7 @@ export default function Header() {
               handleActive(item.text);
             }}
             className={`${styles.menu} ${
-              index === menuLinks.length - 1 ? styles.activeMenu : ""
+              item?.text === activeMenu ? styles.activeMenu : ""
             }`}
           >
             {item.text}
